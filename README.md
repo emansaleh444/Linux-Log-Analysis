@@ -1,49 +1,34 @@
-🚀 Linux Log Analysis Project
-📌 Project Overview
+# 🚀 Linux Log Analysis Project
 
-This project simulates a real-world Data Engineering workflow using Linux command-line tools.
+## 📌 Project Overview
+This project simulates a real-world Data Engineering workflow using Linux command-line tools.  
 The dataset used is the NASA July 1995 web server access log.
 
 The goal was to explore, analyze, and automate log processing using Bash scripting.
 
-📊 Analysis Performed
+---
 
-Total number of log entries
+## 📊 Analysis Performed
 
-File size inspection
+- Total number of log entries
+- File size inspection
+- Top 10 IP addresses
+- Most requested URLs
+- Number of requests per IP
+- Total error requests (4xx & 5xx)
+- Error rate percentage
+- Peak traffic hour
+- Suspicious IP detection
 
-Top 10 IP addresses
+---
 
-Most requested URLs
-
-Number of requests per IP
-
-Total error requests (4xx & 5xx)
-
-Error rate percentage
-
-Peak traffic hour
-
-Suspicious IP detection
-
-⚙️ Automation
+## ⚙️ Automation
 
 The project includes a Bash script:
 
+```bash
 log_analysis.sh
-
-The script:
-
-Accepts the log file as input
-
-Generates a full report automatically
-
-Saves results in an output file
-
-Run using:
-
-bash log_analysis.sh NASA_access_log_Jul95
-🛠 Tools Used
+##🛠 Tools Used
 
 Linux CLI
 
@@ -61,13 +46,13 @@ Bash
 
 Git & GitHub
 
-📁 Project Structure
+##📁 Project Structure
 Linux-Log-Analysis/
 ├── log_analysis.sh
 ├── report.txt
 ├── explanation.txt
 └── screenshots/
-🎯 Skills Demonstrated
+##🎯 Skills Demonstrated
 
 Log file processing
 
