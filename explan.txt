@@ -1,10 +1,7 @@
-in this project  i download a nasa log dataset using ftp from th terminal
-i extractt the compressed file and inspect its structur using linux tools
-i analyzed the dataset using commands such as wc head tail awk sort and uniq
-i identified the log structure including ip address timestamp url status code and respond size
-i calculate total rows file size and extracted top 10 ip
-i analyzed most requested url and detected error responses 4xx and 5xx
-i calculate error rate and peak traffic hour
-i detected suspicious ip based on high number of requests
-finally i automated analysis using a bash script that accepts the log file as input the script generate a structured report automatically
-this project simulates real world data engineering log analysis tasks
+
+I extracted the compressed file and inspected its structure using Linux tools such as head, tail, wc, and ls.
+I identified the log format including IP address, timestamp, request method, URL, status code, and response size.
+I performed log analysis using awk, sort, uniq, and bc to calculate statistics such as top IPs, most requested URLs, error rate, and peak traffic hour.
+I also detected suspicious IPs based on high request counts.
+Finally, I automated the analysis by creating a bash script that accepts the log file as input and generates a structured report automatically.
+This workflow simulates real-world Data Engineering log processing tasks
