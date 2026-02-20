@@ -1,0 +1,24 @@
+#!/bin/bash
+if [ -z "$1" ]; 
+ then
+   echo "usage: $0 logfile"
+   exit 1
+fi
+LOGFILE=$1
+OUTPUT_DIR="OUTPUT"
+REPORT="$OUTPUT_DIR/report.txt"
+mkdir -p $OUTPUT_DIR
+{
+echo "total rows"
+wc -l $LOGFILE
+echo "file size"
+ls -lh $LOGFILE
+echo "top 10 IPs"
+awk '{print $1}' $LOGFILE | sort | uniq -c | sort -nr | head -10
+echo " top 10 URLs"
+awk '{print $7}' $LOGFILE | sort |uniq -c | sort -nr |head -10
+echo "total errors 4xx & 5xx"
+awk '$9 ~ /^4|^5/' $LOGFILE | wc -l
+echo "peak traffic hour"
+awk -F: '{print $2}' $LOGFILE |cut -d'[' -f2 |sort |uniq -c |sort -nr |head -1
+} > $REPORT
