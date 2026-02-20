@@ -24,44 +24,4 @@ The goal was to explore, analyze, and automate log processing using Bash scripti
 
 ## ⚙️ Automation
 
-The project includes a Bash script:
-
-```bash
-log_analysis.sh
-##🛠 Tools Used
-
-Linux CLI
-
-awk
-
-grep
-
-sort
-
-uniq
-
-wc
-
-Bash
-
-Git & GitHub
-
-##📁 Project Structure
-Linux-Log-Analysis/
-├── log_analysis.sh
-├── report.txt
-├── explanation.txt
-└── screenshots/
-##🎯 Skills Demonstrated
-
-Log file processing
-
-Data analysis using Linux tools
-
-Bash scripting automation
-
-Version control with Git
-
-Real-world dataset handling
-
-✨ This project reflects practical skills relevant to Data Engineering, DevOps, and Linux-based roles.
+The project includes a Bash script
